@@ -63,6 +63,11 @@ function cool(updateFunction) {
 function makeDessert() {
   //add code here to decide which make... function to call
   //based on which link was clicked
+  if (this.innerHTML === "Make Cake") {
+    makeCake();
+  } else {
+    makePie();
+  }
 }
 
 function serve(message, customer) {
