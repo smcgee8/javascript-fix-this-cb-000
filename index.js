@@ -43,6 +43,7 @@ function bake(updateFunction) {
   setTimeout(() => {
     cool(updateFunction)
   }, 2000)
+  updateFunction(status)
 }
 
 function mix(updateFunction) {
