@@ -29,7 +29,7 @@ function makeCake() {
 }
 
 function makePie() {
-  pie.decorate = cake.decorate.call(pie);
+  pie.decorate = cake.decorate.bind(pie);
   var updatePieStatus = updateStatus.call(document.getElementById('pie'));
   mix(updatePieStatus)
 }
